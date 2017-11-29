@@ -1,0 +1,38 @@
+{
+  "id": "a8098c1a-f86e-11da-bd1a-00112444be1e",
+  "duration": 10,
+  "cpfAllowed": [
+    "090.603.504-05",
+    "012.345.678-90"
+  ],
+  "offices": [
+    {
+      "officeType": 1,
+      "numberSize": 2
+    },
+    {
+      "officeType": 2,
+      "numberSize": 4
+    }
+  ],
+  "candidates": [
+    {
+      "name": "Lula",
+      "code": 13,
+      "party": "PT",
+      "officeType": 1
+    },
+    {
+      "name": "Aecio",
+      "code": 20,
+      "party": "PMDB",
+      "officeType": 1
+    },
+    {
+      "name": "lele",
+      "code": 2011,
+      "party": "PMDB",
+      "officeType": 2
+    }
+  ]
+}

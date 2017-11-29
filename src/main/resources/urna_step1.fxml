@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="640.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lala.ui.loadelector.LoadElectorView">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="463.0" prefWidth="724.0" styleClass="urna-background" VBox.vgrow="ALWAYS">
+      <children>
+            <HBox alignment="TOP_RIGHT" prefHeight="610.0" prefWidth="1280.0">
+               <children>
+                  <HBox prefHeight="610.0" prefWidth="782.0" styleClass="screen-background">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="450.0" prefWidth="587.0">
+                           <children>
+                              <Pane prefHeight="163.0" prefWidth="516.0">
+                                 <children>
+                                    <Text boundsType="LOGICAL_VERTICAL_CENTER" layoutX="66.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bem vindo a eleição da FBV" textOrigin="CENTER">
+                                       <font>
+                                          <Font size="32.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </Pane>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" text="Digite seu CPF:" textAlignment="CENTER" wrapText="true">
+                                       <font>
+                                          <Font size="27.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets top="8.0" />
+                                       </padding>
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="userCPF" editable="false" prefHeight="51.0" prefWidth="313.0">
+                                       <font>
+                                          <Font size="27.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="20.0" right="20.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets bottom="80.0" left="80.0" right="80.0" top="80.0" />
+                     </HBox.margin>
+                  </HBox>
+                  <VBox alignment="BOTTOM_CENTER" prefHeight="610.0" prefWidth="428.0" styleClass="number-container">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="427.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <GridPane alignment="CENTER" prefHeight="352.0" prefWidth="428.0">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                            <children>
+                                <Button fx:id="button2" minHeight="50.0" minWidth="90.0" mnemonicParsing="false" onAction="#onNumberPressed" styleClass="button-number-background" text="2" textFill="WHITE" userData="2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                    <font>
+                                        <Font name="System Bold" size="36.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="button3" minHeight="50.0" minWidth="90.0" mnemonicParsing="false" onAction="#onNumberPressed" styleClass="button-number-background" text="3" textFill="WHITE" userData="3" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                    <font>
+                                        <Font name="System Bold" size="36.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="button4" minHeight="50.0" minWidth="90.0" mnemonicParsing="false" onAction="#onNumberPressed" styleClass="button-number-background" text="4" textFill="WHITE" userData="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                    <font>
+                                        <Font name="System Bold" size="36.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="button5" minHeight="50.0" minWidth="90.0" mnemonicParsing="false" onAction="#onNumberPressed" styleClass="button-number-background" text="5" textFill="WHITE" userData="5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                    <font>
+                                        <Font name="System Bold" size="36.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="button6" minHeight="50.0" minWidth="90.0" mnemonicParsing="false" onAction="#onNumberPressed" styleClass="button-number-background" text="6" textFill="WHITE" userData="6" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                    <font>
+                                        <Font name="System Bold" size="36.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="button7" minHeight="50.0" minWidth="90.0" mnemonicParsing="false" onAction="#onNumberPressed" styleClass="button-number-background" text="7" textFill="WHITE" userData="7" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                    <font>
+                                        <Font name="System Bold" size="36.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="button8" minHeight="50.0" minWidth="90.0" mnemonicParsing="false" onAction="#onNumberPressed" styleClass="button-number-background" text="8" textFill="WHITE" userData="8" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                    <font>
+                                        <Font name="System Bold" size="36.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="button9" minHeight="50.0" minWidth="90.0" mnemonicParsing="false" onAction="#onNumberPressed" styleClass="button-number-background" text="9" textFill="WHITE" userData="9" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                    <font>
+                                        <Font name="System Bold" size="36.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="button1" minHeight="50.0" minWidth="90.0" mnemonicParsing="false" onAction="#onNumberPressed" styleClass="button-number-background" text="1" textFill="WHITE" userData="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                    <font>
+                                        <Font name="System Bold" size="36.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="button0" minHeight="50.0" minWidth="90.0" mnemonicParsing="false" onAction="#onNumberPressed" styleClass="button-number-background" text="0" textFill="WHITE" userData="0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                    <font>
+                                        <Font name="System Bold" size="36.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                           <VBox.margin>
+                              <Insets bottom="30.0" />
+                           </VBox.margin>
+                        </GridPane>
+                        <GridPane minHeight="40.0" prefHeight="53.0" prefWidth="428.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Button minHeight="55.0" minWidth="120.0" mnemonicParsing="false" styleClass="button-white" text="BRANCO" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Button>
+                              <Button minHeight="55.0" minWidth="120.0" mnemonicParsing="false" onAction="#onCleanClicked" styleClass="button-clear" text="CORRIGE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Button>
+                              <Button minHeight="70.0" minWidth="120.0" mnemonicParsing="false" onAction="#onConfirmClicked" styleClass="button-confirm" text="CONFIRMA" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </GridPane>
+                     </children>
+                     <HBox.margin>
+                        <Insets bottom="30.0" right="50.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="30.0" left="30.0" right="30.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </HBox>
+      </children>
+    </AnchorPane>
+  </children>
+  <stylesheets>
+    <URL value="@BasicApplication.css" />
+  </stylesheets>
+</VBox>

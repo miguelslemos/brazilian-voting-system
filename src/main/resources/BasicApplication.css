@@ -1,0 +1,40 @@
+.menu-bar {
+    -fx-background-color: #aeb5ba, linear-gradient(to bottom, #ecf4fa 0%, #ced4d9 100%);
+    -fx-background-insets: 0, 0 0 1 0;
+}
+
+.menu-bar .menu .label {
+    -fx-text-fill: #2d3e4c;
+}
+
+.code {
+	-fx-border-width: 4;
+    -fx-border-color: black;
+    -fx-border-style: solid;
+}
+.urna-background {
+	-fx-background-color: #c8c8c8;
+}
+
+.screen-background {
+	-fx-background-color: white;
+}
+
+.number-container {
+	 -fx-background-color: #4b5459;
+}
+.button-number-background {
+	-fx-background-color: black;
+}
+
+.button-white {
+   -fx-background-color: white;
+}
+
+.button-clear {
+   -fx-background-color: red;
+}
+
+.button-confirm {
+   -fx-background-color: green;
+}
